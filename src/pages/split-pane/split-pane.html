@@ -1,0 +1,9 @@
+<ion-split-pane>
+
+  <ion-nav [root]="leftPage" main #leftPane></ion-nav>
+
+  <ion-menu [content]="leftPane" side="right" id="rightPane" swipeEnabled="false" type="overlay">
+    <ion-nav #rightPane [root]="rightPage"></ion-nav>
+  </ion-menu>
+
+</ion-split-pane>
